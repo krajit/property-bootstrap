@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
+
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.variable}`}>
         {children}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossOrigin="anonymous"></script>
       </body>
     </html>
   );
